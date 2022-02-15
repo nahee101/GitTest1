@@ -1,0 +1,81 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*스타일태그는 헤드에 넣어서 원하는 위치에 디자인으로 줄 수 있다.*/
+        p{
+            background-color: red;
+            }
+
+        table{
+            border: 2px solid black;
+            }
+
+        tr{
+            border: 2px solid blue;
+            }
+
+        td{
+            border: 2px solid olive;
+            }
+</style>
+</head>
+<body>
+    <h3><a name="up"></a>스타일 태그 확인</h3>
+    <p style="color: blue;">스타일태그가 적용된 태그입니다.</p>  
+    <p style="color: #665de6">색상값으로 적용된 태그입니다.</p>
+    <p style="background-color: burlywood; border: 2px solid black">배경과 테두리입니다.</p><br>
+
+    <h3>링크 학인</h3>
+    <a href="텍스트확인.html">텍스트 확인으로 넘어갑니다.</a><br>
+    <a href="https://www.naver.com">
+        <img src="/HTML 기초/img/네이버.png" alt="네이버" title="절대경로를 이용해서 이미지 들고 오기"><br>
+    </a> <!--이미지 누르면 네이버로 이동: target="self" 상태-->
+    
+    <a href="https://www.daum.net/" target="_blank">
+        <img src="./img/다음.png" alt="다음" title=". 현재경로를 이용해서 이미지 들고 오기"><br>
+    </a> <!--이미지 누르면 다음으로 이동: 새 탭에서 링크 열기-->
+
+    <a href="#up">맨 위로 올라가기</a><br>
+
+    <h3>리스트 태그 확인</h3>
+    <ul style="list-style-type: circle;"> <!--unorderd list-->
+        <li>순서가 없는 리스트</li>
+        <li>순서가 없는 리스트</li>
+        <li>순서가 없는 리스트</li>
+    </ul><br>
+
+    <ol style="list-style-type: lower-roman;"> <!--orderd list-->
+        <li>순서가 있는 리스트</li>
+        <li>순서가 있는 리스트</li>
+        <li>순서가 있는 리스트</li>
+    </ol><br>
+
+    <dl> <!--description list-->
+        <dt style="font-weight: bold;">HTML Hypertext Markup Language</dt>
+        <dd>웹 문서를 만들기 위하여 사용하는 기본적인 웹 언어의 한 종류이다. 
+            하이퍼텍스트를 작성하기 위해 개발되었다.</dd>
+    </dl><br>
+
+    <h3>테이블 작성</h3>
+    <table><!--table을 작성할 때는 미리 그려보자 ^^;-->
+        <tr>
+            <td rowspan="3">자기 자신과 아래 셀 2개를 차지한다.</td>
+            <td colspan="3">rowspan을 사용한 첫 번째 tr</td>
+        </tr>
+        <tr title="row(열)를 작성한다."><!--tr: a row of cells in a table-->
+            <td>홍길동</td><!--td: a data of cells in a table-->
+            <td>부산</td>
+            <td>하나의 셀이 생긴다.</td>
+        </tr>
+        <tr title="row(열)을 작성한다.">
+            <td colspan="3">하나의 셀만 생성된다면?</td> <!--colspan을 사용하면 차지하는 칸 수를 늘릴 수 있음 = 셀 병합-->
+        </tr>
+        <tr>
+            <td colspan="1">1칸 차지</td>
+            <td colspan="2">2칸 차지</td>
+        </tr>
+    </table>
+</body>
+</html>

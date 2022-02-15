@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>HTML5에서 추가된 input 요소</h3>
+    <form novalidate> <!--유효성 검사 안 함-->
+        <input type="number"> 숫자만 입력 가능 <br>
+        
+        0<input type="range" min="0" max="100">100 입력범위 지정 <br>
+        <!--보통 음량 조절-->
+        
+        <input type="color" value="#FFFFFF"> 색상 선택 <br>
+        <!--value로 초기값 설정 가능-->
+
+        <input type="date" min="2022-01-01"> 날짜 입력 <br>
+
+        <input type="time" value="00:00"> 시간 입력 <br>
+
+        <input type="datetime-local"> 날짜 및 시간 입력 <br>
+
+        <input type="month"> 연도와 달 <br>
+
+        <input type="week"> 연도와 주 <br>
+
+        <input type="email"> 이메일 입력: @ 입력됐는지 확인해 줌 <br>
+        <input type="url"> url 입력: <br>
+        <input type="tel"> 전화번호 입력: 사파리에만 제공됨 >> 브라우저마다 실행되는지 여부 다름<br>
+        <input type="search"> 검색어 입력 <br>
+        <input type="submit" value="제출">
+        <!--submit 버튼을 만들어서 실행하면 @ 입력하라고 뜸-->
+    </form>
+</body>
+</html>

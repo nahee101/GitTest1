@@ -1,0 +1,62 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <h3>Form 태그 활용</h3>
+        <form>
+            <label>글자를 작성해주세요</label>
+                <input type="text"><br> <!--서버와 연결되어 있지 않기 때문에 enter 눌렀을 때 반응 없음-->
+            <label>패스워드 타입입니다</label>
+                <input type="password"><br> <!--패스워드 입력창 글씨 안 보임-->
+            <p>라디오 버튼입니다</p>
+                <input type="radio" name="num" value="1"> 1 <!--초기값: value-->
+                <input type="radio" name="num" value="2"> 2
+                <input type="radio" name="num" value="3"> 3
+                <!--그룹 중 하나만 선택하고 싶으면 name을 동일하게 설정해야 함-->
+                <!--display가 in-line 형식인 걸 알 수 있죠? ^^-->
+
+            <p>체크박스입니다</p>
+                <input type="checkbox" name="movie" value="영화1" checked>화양영화
+                <input type="checkbox" name="movie" value="영화2">중경삼림
+                <input type="checkbox" name="movie" value="영화3" disabled>아비정전
+                <!--여러 항목 체크 가능-->
+                <!--checked: 이미 체크돼 있음    disabled: 체크 불가능-->
+
+            <p>파일을 추가해주세요</p>
+                <input type="file" name="file" accept="image/*">
+                <!--파일 불러오기 가능-->
+                <!--accept: "가져올 수 있는" 파일 확장자 한정 가능-->
+
+            <p>select 선택 입력을 통해 하나의 값 가져오기</p>
+                <select name="fruit">
+                    <option value="사과">사과</option>
+                    <option value="배">배</option>
+                    <option value="귤">귤</option>
+                </select>
+
+            <p>여러 줄을 입력하기 위한 textarea</p>
+            <textarea name="text" cols="30" rows="10"></textarea>
+
+            <p>버튼</p>
+                <button type="button" onclick="alert('버튼을 클릭했습니다')">버튼을 눌러주세요</button>
+                <!--type을 button으로 만들면 나중에 button이 기능함-->
+
+            <p>input 전송버튼</p>
+            <input type="submit" value="전송 버튼"> <!--이쪽은 서버로 전송하는 역할--> <!--value 값이 버튼 이름-->
+            
+            <p>이메일 전송</p>
+            <fieldset>
+                <legend>입력양식</legend>
+                이름: <br>
+                <input type="text" name="username"><br>
+                이메일: <br>
+                <input type="text" name="email"><br><br>
+                <input type="submit" value="전송">
+            </fieldset>
+        
+            <!--input type이 button이면 다른 웹페이지로 이동하는 게 아님!!! submit과 구별해서 사용-->
+        </form> <!--HTML에서 많은 부분을 차지함~ 로그인창 들어갈 때 확인해보기~-->
+</body>
+</html>

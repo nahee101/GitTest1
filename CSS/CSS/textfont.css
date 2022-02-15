@@ -1,0 +1,38 @@
+.textRtl{
+    font-size: 30px;
+    direction: rtl; /*여기까진 오른쪽 정렬이었는데*/
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-align: center; /*텍스트 배치가 센터로 고정됨*/
+    text-decoration: overline underline dashed 3px;
+    text-shadow: 3px 1px lightcoral; /*x방향 3px, y방향 1px*/
+}
+
+/* ltr: left to right 왼쪽 정렬(기본)
+    rtl: right to left 오른쪽 정렬*/
+
+.text_p{
+    text-indent: 10px; /*들여쓰기*/
+    line-height: 30px;
+}
+
+.font_h3{
+    font-family: fantasy, "궁서";
+}
+
+.font{
+    font-family: "바탕";
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+.web_font{
+    font-family: 'jua';
+    font-size: 40px;
+    font-weight: lighter;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: oblique;
+    /*oblique와 italic 모두 기울임체
+    oblique를 제공하는 브라우저는 거의 없음 그래서 italic 쓰는 게 나음
+}
+

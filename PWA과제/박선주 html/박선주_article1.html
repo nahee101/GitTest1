@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박선주_article1.html</title>
+    <style>
+        #jellyfish{
+            width: 40%;
+        }
+        .pic{
+            text-align: center;
+        }
+        .article{
+            text-indent: 10px;
+        }
+        .corp{
+            float: left;
+            margin-right: 8px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="section"> <!--기사 내용입니다-->
+        <h1>미국인이 과증식한 '대포알 해파리' 활용하는 방법</h1>
+        
+        <div class="pic"> <!--사진과 관련된 내용입니다-->
+            <img src="./img/jellyfish.jpg" id="jellyfish" alt="해파리 사진입니다.">
+            <p>위의 이미지는 <a href="https://pixabay.com/ko/" target="_blank" title="픽사베이">픽사베이</a>에서 제공받았습니다.</p>    
+        </div>
+
+        <p class="article">
+            [뉴스펭귄 임병선 기자] 미국에서 과증식하는 대포알 모양 해파리를 잡아들여 수출하는 어업활동이 이뤄지고 있다. 
+            미국 동부에 위치한 조지아주, 플로리다주 해안에서는 과도하게 증식한 해파리를 대량으로 잡아들이는 어업이 성행하고 있다. 
+            조업 대상은 '캐논볼해파리(Canonbal Jellyfish)'다. 마치 대포알을 닮아 이런 이름이 붙은 이 종은 물속에서 완전한 구형에 가까우며 독성이 거의 없는 생물이다.
+        </p>
+        <p class="article">
+            조지아주에서는 여름과 가을, 해파리가 과도하게 증식하는 현상이 발생한다. 지난해 5월에도 조지아주 타이비섬(Tybee Island)에 죽은 캐논볼해파리떼가 해변으로 몰려온 사례가 발견됐다. 
+            조지아주 해안에 있는 생물의 총량인 바이오매스 비율을 여름과 가을에 분석하면, 캐논볼해파리가 16% 이상을 차지한다. <br>
+        </p>
+        <p><i>작성자: 임병선 기자 lbs@newpsenguin.com</i></p>
+    </div>
+
+    <div id="feedback"> <!--본 기사의 피드백과 관련된 내용입니다-->
+        <form>
+            <hr>
+            <div> <!--기사 평가-->
+                <p>이 기사에 대한 평가를 주세요</p>
+                
+                <input type="radio" name="emotion" value="좋아요"> &#128516 좋아요
+                <input type="radio" name="emotion" value="슬퍼요"> &#128549 슬퍼요
+                <input type="radio" name="emotion" value="화나요"> &#128545 화나요
+            </div> <br>
+
+            <div> <!--메시지 및 후원-->
+                <p>격려의 메시지와 후원을 받고 있습니다.</p>
+
+                <table>
+                    <tr> <!--닉네임/비번 입력창-->
+                        <td>닉네임</td>
+                        <td><input type="text" name="username"></td>
+                        <td>비밀번호</td>
+                        <td><input type="password" name="userpassword"></td>
+                    </tr>
+                    <tr> <!--코멘트-->
+                        <td colspan="4">
+                            <textarea name="comment" cols="80" rows="5" placeholder="메시지를 남겨주세요"></textarea>
+                        </td>
+                    </tr>
+                    <tr> <!--후원금-->
+                        <td>후원금 :</td>
+                        <td colspan="3"><input type="number" name="donation" min="0" step="1000"> 원 </td>
+                    </tr>
+                    <tr> <!--후원 안내-->
+                        <td colspan="4">
+                            <u>1000원</u> 단위로 올라갑니다. 원하는 금액을 입력해주세요.
+                        </td>
+                    </tr>
+                </table>
+            </div> <br>
+
+            <input type="submit" value="제출">
+        </form>
+    </div>
+
+    <div id="footer"><!--footer입니다-->
+        <hr>
+
+        <ul>
+            <li class="corp">회사소개 ｜</li>
+            <li class="corp">인재채용 ｜</li>
+            <li class="corp">제휴제안 ｜</li>
+            <li class="corp">개인정보처리방침 ｜</li>
+            <li class="corp">&copy;뉴스</li>
+        </ul>
+    </div>
+</body>
+</html>

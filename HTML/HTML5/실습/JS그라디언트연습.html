@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>캔버스</title>
+</head>
+<body>
+    <h1>Canvas 확인</h1>
+    <canvas id="myCanvas" width="500" height="500" 
+    style="border: 3px solid orange;">
+    </canvas>
+    
+    <script>
+        let paper = document.getElementById("myCanvas");
+        let context = paper.getContext("2d");
+
+
+
+        let grdline = context.createLinearGradient(0,200,200,200);
+        //Linear: 선형그라디언트(시작 x,y, 끝 x,y)
+        grdline.addColorStop(0,"blue");
+        grdline.addColorStop(1,"white");
+
+        context.fillStyle= grdline;
+        context.fillRect(0,0,150,50);
+
+        context.font="30px Arial";
+        context.fillStyle="#ffffff";
+        context.fillText("CANVAS",12,35);
+
+        console.log(paper);
+        
+    </script>
+</body>
+</html>

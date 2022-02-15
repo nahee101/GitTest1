@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>캔버스</title>
+</head>
+<body>
+    <h1>Canvas 확인</h1>
+    <figure>
+        <img id="naver" src="../HTML 기초/img/네이버.png" alt="">
+        <figcaption>
+            네이버 이미지
+        </figcaption>
+    </figure>
+
+    <canvas id="myCanvas" width="300" height="500" 
+    style="border: 3px solid black;">
+    </canvas>
+
+    <h1>SVG 확인</h1>
+    <svg width="300" height="200"
+    style="border: 3px solid black;">
+        <line 
+            x1="50" y1="0" x2="100" y2="350" 
+            stroke="orange" stroke-width="5";>
+        </line>
+    
+        <circle
+            cx="50" cy="50" r="40"
+            stroke="green" stroke-width="4" fill="yellow";>
+        </circle>
+
+        <rect
+            x="150" y="10" width="140" height="80"
+            style="stroke: rgb(0,0,255); stroke-width: 3;
+            fill: rgb(255,255,0);">           
+        </rect>
+
+        <rect
+            x="170" y="50" rx="35" ry="30" width="70" height="80"
+            style="stroke: aqua; stroke-width: 3;
+            fill: red; opacity: 1;">
+        </rect>
+
+        <polygon
+            points="10,100 190,100 30,200 100,40 170,200">
+        </polygon>
+    </svg>
+    
+    <script>
+        let paper = document.getElementById("myCanvas");
+        let context = paper.getContext("2d"); //paper 띄우기
+        
+        context.fillStyle="#ff0000";
+        context.fillRect(0,0,150,75);
+
+        //원은 그리기 전에 선을 초기화합니다
+        context.beginPath();
+        context.arc(50,100,10,0,2*Math.PI);
+        context.fill(); //채우기
+        context.strokeStyle="#FFFF00";
+        context.stroke(); //선 그리기
+        /*
+        패스를 지정한 후에 선을 그린다!
+        */
+
+        context.moveTo(0,0); //시작점
+        context.lineTo(150,75); //끝점
+        context.stroke(); //ㅇㅇ그려줄게
+
+        context.font="30px Arial";
+        context.fillStyle="#0000ff";
+        context.fillText("배아파",30,50);
+        //fillText는 작성할 내용과 x(시작 위치), y(문자의 바닥 위치)에서부터 시작한다.
+
+        //Create Gradient
+        //그라디언트 종류: 선형/원형이 있음
+        let grd = context.createRadialGradient(75,200,5,75,200,100);
+        //Radial: 원형그라디언트(시작원의 x,y 중심점, 반지름, 끝나는 원의 x, y 중심점, 반지름)
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+
+        let grdline = context.createLinearGradient(0,200,150,200);
+        //Linear: 선형그라디언트(시작 x,y, 끝 x,y)
+
+        grdline.addColorStop(0,"blue");
+        grdline.addColorStop(1,"yellow");
+
+
+        context.fillStyle= grdline;
+        context.fillRect(0,150,150,50);
+
+        context.strokeStyle = grdline;
+        context.rect(0,120,150,20);
+        context.stroke();
+
+        let ficture = document.getElementById("naver");
+        context.drawImage(ficture, 10,250);
+
+        console.log(paper);
+        
+    </script>
+</body>
+</html>

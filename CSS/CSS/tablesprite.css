@@ -1,0 +1,29 @@
+table{
+    border: solid 3px black;
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: center;
+    background-color: yellow;
+    empty-cells: hide;
+}
+
+td{
+    border: dashed 1px gray;
+}
+
+.up, .down, .left, .right{
+    background-image: url("../img/img1.png");
+}
+
+.up{
+    width: 59px; height: 62px; background-position: 0 0;
+}
+.down{
+    width: 57px; height: 62px; background-position: -60px 0;
+}
+.left{
+    width: 59px; height: 62px; background-position: -118px 0;
+}
+.right{
+    width: 59px; height: 62px; background-position: -180px 0;
+}

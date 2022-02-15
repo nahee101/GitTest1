@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Form실습</title>
+</head>
+<body>
+    <h1>로그인 페이지입니다</h1>
+    <form> <!--데이터 값을 다른 웹페이지로 보내기 위해 form을 사용합니다-->
+        <table style="border: 2px solid black">
+        <!--table로 입력폼을 만들어서 보기 좋게 정렬해줍니다-->
+        <!--tr: 한 개의 열 / td: 한 개의 셀-->
+            <tr>
+                <td>사용자 : </td>
+                <td>
+                        <input type="text" name="username"> 
+                        <!--name="username"을 통해 입력받은 값을 다른 웹페이지로 전송-->
+                </td><!--id 입력창-->
+                <td rowspan="2">
+                        <input type="submit" value="전송">
+                </td><!--전송 버튼-->
+            </tr><!--1행입니다-->
+
+            <tr>
+                <td>비밀번호 : </td>
+                <td>
+                        <input type="password" name="password">
+                        <!--name="password"을 통해 입력받은 값을 다른 웹페이지로 전송-->
+                </td><!--password 입력창-->
+            </tr><!--2행입니다-->
+        </table>
+    </form><!--그런데 지금 방식은 주소창에 id/password가 공개되기 때문에 방식을 바꾸긴 해야 합니다~-->
+
+    <a href="www.naver.com">비밀번호를 잊어버렸나요?</a>
+</body>
+</html>

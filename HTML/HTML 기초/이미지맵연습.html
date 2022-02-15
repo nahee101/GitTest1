@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>이미지맵 연습</h1>
+    <img src="./img/이미지맵.png" alt="이미지맵 연습" usemap="#vending">
+    <map name="vending">
+        <area shape="rect" coords="35,32, 400,60" 
+        href="https://www.naver.com" alt="네이버">
+        
+        <area shape="circle" coords="270,506 , 85" href="https://www.daum.net" alt="다음">
+    </map>
+    
+    <p>
+        이미지맵은 하나의 이미지 안에 일정 영역을 지정하여 링크를 걸 수 있는 방법이다. <br>
+        이미 디자인된 하나의 디자인이 있을 때 사용한다. <br>
+        모양의 위치를 지정하는 방법은 canvas나 SVG와 동일함
+    </p>
+</body>
+</html>

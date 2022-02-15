@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css기본속성확인</title>
+    <!--CSS파일-->
+    <link rel="stylesheet" href="../CSS/colorBackgroundcolor.css">
+    <link rel="stylesheet" href="../CSS/textfont.css">
+    <link rel="stylesheet" href="../CSS/linklist.css">
+    <link rel="stylesheet" href="../CSS/tablesprite.css">
+</head>
+<body class="background_image">
+    <h1>css 기본속성 확인</h1>
+    <p class="color_name">css 색 이름으로 색상 넣기: yellow</p>
+    <p class="color_rgb">css rgb( )값으로 색상 넣기: rgb(255,255,0)</p>
+    <p class="color_16">css 16진수 값으로 색상 넣기: #FFFF00</p>
+
+    <h3>backgronud를 이용해 이미지 넣기</h3>
+    <div>
+        <p>div의 backgronud에 이미지 넣기</p>
+        <p>
+            이미지 링크를 통해 이미지를 삽입할 수 있으며, <br>
+            기본값은 repeat이다. <br>
+            들어갈 수 있는 속성: no, x, y, repeat
+        </p>
+        <p>
+            top, center, bottom >> y축 위치<br>
+            letf, center, right >> x축 위치<br>
+        </p>
+
+        <p>스크롤 확인을 위한 p 태그임</p>
+
+        <p>
+            attatchment를 통해 위치를 고정할 수 있다 <br>
+            fixed: 스크롤을 내렸을 때 움직이지 않는다 <br>
+            scroll: 스크롤을 내렸을 때 함께 움직인다 (기본값)
+        </p>
+    </div>
+
+    <h3 class="font_h3">텍스트와 폰트 속성 확인</h3>
+    <div>
+        <p class="textRtl">오른쪽 정렬임</p>
+        <p class="text_p">
+            베이징=연합뉴스) 김동찬 기자 = 2022 베이징 동계올림픽에 출전 중인 한국 선수단은 
+            7일 열린 쇼트트랙 남자 1,000ｍ 준결승 판정에 대해 국제스포츠중재재판소(CAS)에 제소하기로 했다. <br>
+            대한체육회는 "8일 오전 베이징 동계올림픽 메인미디어 센터에서 윤홍근 선수단장의 긴급 기자회견을 열고 
+            CAS에 관련 사항을 제소하기로 했다"며 
+            "이번 판정의 부당함을 공식화해 다시는 국제 빙상계와 스포츠계에서 우리 선수들에게 억울한 일이 벌어지지 않도록 
+            최선을 다하겠다"고 밝혔다.
+        </p>
+
+        <p class="font">fantasy 글꼴</p>
+    </div>
+
+    <h3>웹폰트 사용하기</h3>
+        <p style="font-family: 'jua';">link를 통해 가지고 온 웹 폰트</p>
+        <p class="web_font">css파일에 넣어봄 html</p>
+
+    <h3>링크를 CSS로 꾸미기</h3>
+    <a href="https://www.naver.com">NAVER</a>
+
+    <h3>리스트를 CSS로 꾸미기</h3>
+    
+    <ul class="unorderd_list_mark">
+        <li>순서 없는 리스트</li>
+        <li>순서 없는 리스트</li>
+        <li>순서 없는 리스트</li>
+    </ul>
+    이미지를 마크 대용으로 사용한다.
+
+    <ol class="orderd_list_mark">
+        <li>순서 있는 리스트</li>
+        <li>순서 있는 리스트</li>
+        <li>순서 있는 리스트</li>
+    </ol>
+    list-style-type을 none으로 바꾸면 앞에 있던 마크가 사라진다.
+
+    <div>
+        <h1>테이블에 CSS 효과 넣기</h1>
+        <table>
+            <tr>
+                <td>동물의 종류</td>
+                <td>개월 수</td>
+                <td>이름</td>
+            </tr>
+            <tr>
+                <td>강아지</td>
+                <td>6</td>
+            </tr>
+        </table>
+        collapse 속성은 collapse(합치기), separate(분리)로 값이 있다 <br>
+        empty-cells를 사용할 때는 separate 처리 해야 함 <br>
+        border-spacing도 동일하다
+    </div>
+
+    <div>
+        <h1>이미지 스프라이트 활용하기</h1>
+        <div class="up"></div>
+        <div class="down"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <p>이미지 스프라이트는 배경이미지를 통해서 그림을 잘라 사용한다 <br>
+        사용된 이미지가 많을 경우 웹 브라우저는 서버에 해당 이미지의 수만큼 이미지를 요청해야 하므로 <br>
+        웹페이지의 로딩 시간이 길어지기 때문이다 <br>
+        div는 내부에 요소가 없으면 공간을 할당하지 않으므로, 반드시 공간을 지정하여야 함</p>
+    </div>
+</body>
+</html>

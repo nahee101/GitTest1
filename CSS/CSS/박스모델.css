@@ -1,0 +1,61 @@
+.padding{
+    width: 400px;
+    padding: 20px 50px 10px 40px; /*순서대로 상우하좌*/
+    background-color: burlywood;
+}
+
+.groove_3d, .ridge_3d, .inset_3d, .outset_3d{
+    width: 100px; height: 20px;
+}
+
+.groove_3d{
+    border-style: groove;
+    border-width: 10px;
+    border-color: coral;
+}
+
+.ridge_3d{
+    border: ridge 10px yellowgreen;
+}
+
+.inset_3d{
+    border: inset 10px pink;
+}
+
+.outset_3d{
+    border: outset 10px rosybrown;
+}
+
+.border_width{
+    width: 100px; height: 30px;
+    border-color: black; 
+    border-top-width: 10px; border-top-style: solid;
+    border-right: 5px dotted;
+    border-bottom: 4px double;
+    border-left: 5px dashed;
+}
+
+.none{
+    width: 100px; height: 30px;
+    background-color: darkblue;
+    border: none;
+}
+
+
+.hidden{
+    width: 100px; height: 30px;
+    background-color: darkblue;
+    border: hidden 10px;
+}
+
+.margin1{
+    width: 100px; height: 80px;
+    background-color: cadetblue;
+    margin: auto;
+    outline: black solid 2px;
+}
+
+.margin2{
+    width: 100px; height: 80px;
+    background-color: cadetblue;
+}

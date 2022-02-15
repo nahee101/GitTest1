@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5추가input속성</title>
+</head>
+<body>
+    <h1>HTML5에서 추가된 input 속성</h1>
+    <form action="서버 측 파일.html" autocomplete="off" id="form1" method="get"> 
+    <!--autocomplete: 사용자 정보 자동저장? 자동저장 속성-->
+    <!--form 태그의 action 속성은 폼 데이터를 서버로 보낼 때 해당 데이터가 도착할 url을 명시한다-->
+    <!--method: post >> 주소창에 입력했던 값이 뜨지 않음! 암호화~-->
+        <input type="text" name="name" value="초기에 적혀 있는 값">
+        닫는 꺽쇠가 없어서 value를 써야 합니다^^ <br><br>
+        
+        <input type="text" name="auto" value="auto focus" autofocus> <br><br>
+        <!--새로고침했을 때 자동으로 커서 이동-->
+
+        <input lsit="food" name="food" value="음식"> <br><br>
+            <datalist id="food">
+                <option value="한식"></option>
+                <option value="중식"></option>
+                <option value="일식"></option>
+                <option value="양식"></option>
+            </datalist>
+
+        <input type="file" value="파일" multiple> <br><br>
+        <!--이제 파일 여러 개 선택 가능-->
+
+        <input type="text" pattern="[a-z]"> <br><br>
+        <!--패턴에 들어가는 문자의 반복, 규칙-->
+
+        <input type="text" placeholder="칸에 뭐가 들어가야 하는지 힌트"> <br><br>
+        <!--value가 아니라 서버로 값이 전달되는 건 아님-->
+
+        <input type="text" required> <br><br>
+        <!--빈값인 경우 서버로 전달되지 않는다,,, ? ?? ? 
+            비어 있는 채 전송하면 브라우저에서 값 입력하라고 알람 뜸-->
+
+        <input type="number" step="2"> <br><br>
+        <!--2씩 증가하는 게 보이죠-->
+
+        <input type="image" src="../HTML 기초/img/네이버.png" alt="전송"
+                width="200px" height="100px"> <br><br>
+        <!--image를 버튼으로 이용할 수 있음-->
+        src로 파일 위치를 알려줄 때 <strong> ../</strong> 사용 시 상위폴더로 이동함 <br><br>
+
+        <input type="submit" formaction="다른 서버 측 파일.html" formenctype="application/x-www-form-urlencoded">
+        <!--formenctype: 어떤 데이터 type로 보낼지 정하는 속성-->
+        submit타입은 form-속성을 이용해서 <br>
+        인코딩을 바꾸거나 서버 측 파일을 바꿀 수 있습니다. <br>
+        차후에 서버 배울 때 다시 확인 ^^ <br><br>
+    </form>
+
+    <input type="text" name="form" form="form1" value="form 태그 밖">
+    <!--form태그 내에 input을 넣는 게 좋음: 이렇게 독립돼 있으면 가독성이 떨어짐-->
+
+</body>
+</html>

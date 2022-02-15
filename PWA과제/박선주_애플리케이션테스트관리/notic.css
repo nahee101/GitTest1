@@ -1,0 +1,106 @@
+*{margin: 0;}
+/*header 관련 style*/
+header{
+    width: 100%;
+    background-color: darkblue; color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/*nav 관련 style*/
+ul{
+    background-color: white;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 10px
+}
+
+li{
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+li a:link, a:visited{
+    color: black;
+}
+
+li a:hover{
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+/*section style*/
+
+div p{
+    margin-top: 4px;
+}
+
+/*동영상 및 배너 안내 style*/
+.banner{
+    float: left;
+    position: relative;
+    width: 280px; height: 400px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 10px; padding: 20px;
+}
+
+.info{
+    position: absolute;
+    top: 188px;
+    width: 280px; height: 222px;
+    background-color: lightgray;
+}
+
+/*주요소식 및 공지사항 style*/
+.main_wrap{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    min-height: 100%;
+    margin-bottom: 110px;
+}
+
+.news{
+    float: left;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 10px 10px 10px 0; padding: 20px;
+}
+
+.notice{
+    float: left;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 0 10px 10px 0; padding: 20px;
+}
+
+.notice>p::after{
+    content: "N";
+    display: inline-block;
+    width: 20px; height: 20px;
+    background-color: darkblue; color: white;
+    border: none; border-radius: 20px;
+    text-align: center;
+    margin: 0 0 0 5px;
+}
+
+/*footer 관련 style*/
+
+footer{
+    clear:both; /*floating 초기화*/
+
+    width: 100%;
+    background-color: lightgray;
+    padding: 30px 0;
+    text-align: center;
+    overflow: hidden;
+}

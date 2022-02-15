@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>블록과 인라인</title>
+</head>
+<body>
+    <h3>style display가 블록인 경우</h3>
+        <p style="border: 3px solid black;">
+            p 태그에 스타일을 적용하면 화면 끝까지 색이 변합니다.
+        </p>
+        <div style="border: 2px solid darkblue; color: olive; font-weight: bold;">
+            <p>div 안의 태그입니다.</p>
+            <ul>
+                <li>리스트입니다</li>
+                <li>리스트입니다</li>
+                <li>리스트입니다</li>
+            </ul>
+        </div>
+
+        <!--어디에 포함돼 있는지가 중요함-->
+        <ol>
+            <li>div 바깥의 리스트입니다.</li>
+            <li>div 바깥의 리스트입니다.</li>
+            <li>div 바깥의 리스트입니다.</li>
+        </ol>
+
+    <h3>style display가 인라인인 경우</h3>
+        <p style="display: inline; border: 3px solid black;">강제로 p 태그를 인라인으로 만들었습니다.</p><br>
+        <img src="./img/네이버.png" alt="네이버로고" style="border: 3px solid powderblue; display: block;"><br>
+        <!--disvplay 속성이 block인 경우에는 자동으로 줄이 바뀜-->
+        <a href="HTML요소실습.html" target="_blank" style="border: 3px inset orchid;">html실습 내용</a>
+        <p>
+            인라인인 경우 자동으로 줄이 바뀌지 않습니다.<br>
+            요소 내 콘텐츠의 크기만큼 공간을 차지하고 있기 때문입니다.<br>
+            style의 display 값을 block으로 바꿔주면 새로운 줄에서 시작하며 콘텐츠가 한 줄을 다 차지합니다.
+        </p>
+
+    <h3>iframe을 이용한 페이지 삽입</h3>
+    <iframe src="텍스트확인.html" name="show" style="width: 100%; height: 800px;">
+    </iframe>
+
+    <a href="텍스트실습.html" target="show">페이지를 이동합니다.</a>
+    <a href="텍스트확인.html" target="show">원래 페이지로 이동합니다.</a>
+
+</body>
+</html>

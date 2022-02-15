@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap');
+
+h1{
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+a:link, a:visited{
+    color: black;
+}
+
+a:hover{
+    font-style: italic;
+    text-shadow: 1px 2px 2px coral;
+}
+
+.m_box{
+    width: 50%;
+    border: 3px solid green;
+    background-color: beige;
+}
+
+.siteList{
+    list-style-type: circle;
+}
+
+.m_list{
+    color: green;
+    font-family: '궁서';
+    text-decoration: underline wavy 2px red;
+}

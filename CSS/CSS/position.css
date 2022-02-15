@@ -1,0 +1,49 @@
+div{
+    background-color: bisque;
+    display: inline-block;
+    padding: 20px;
+}
+
+a{
+    width: 200px; height: 30px;
+    background-color: cadetblue;
+}
+
+p{
+    background-color: darkkhaki;
+    margin: 0;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.none{
+    display: none;
+}
+
+.opacity{
+    filter: opacity(50%);
+}
+
+.static{
+    position: static;
+}
+
+.relactive{
+    position: relative;
+    left: 50px; /*현재 위치를 기준으로 이동*/
+}
+
+.fix{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.absolute{
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
